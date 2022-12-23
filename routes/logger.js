@@ -19,7 +19,7 @@ apiProtectedRoutes.put("/status", async function (req, res) {
 	const object = {
 		traffic_light_id: parseInt(trafficLightId),
 		payload: req.body,
-		ip: req.socket.remoteAddress,
+		ip: req.headers["x-forwarded-for"] || req.socket.remoteAddress,
 	};
 
 	try {
