@@ -23,7 +23,7 @@ apiRouter.post("/login", async function (req, res) {
 	);
 
 	console.log("employees:", employee);
-	if (password !== employee.password) {
+	if (!employee || password !== employee.password) {
 		return res
 			.status(401)
 			.send({ success: false, message: "Invalid Credentials" });
