@@ -1,0 +1,23 @@
+<html>
+   <head>
+      <title>login</title>
+      <link rel="stylesheet" href="/css/global.css" />
+      <link rel="stylesheet" href="/css/dashboard.css" />
+   </head>
+   <body>
+      <%- include('nav', {user: user}); %>
+      <div id="main">
+         <div id="traffic-lights-container">
+            <h1 class="heading" style="margin: 25px 10px">Traffic Lights</h1>
+            <div id="traffic-lights"></div>
+         </div>
+         <div id="logs-container">
+            <h1 class="heading">Logs</h1>
+            <div id="logs"></div>
+         </div>
+      </div>
+   </body>
+
+   <script src="/js/global.js"></script>
+   <script src="/js/dashboard.js"></script>
+</html>
