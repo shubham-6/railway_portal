@@ -1,3 +1,4 @@
+// const BASE_URL = "http://13.115.102.68/";
 const BASE_URL = "http://localhost:8080";
 
 async function request({ url, method, body, headers }) {
